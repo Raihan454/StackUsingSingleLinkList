@@ -78,7 +78,11 @@ namespace StackUsingSingleLinkList
                 char ch = Convert.ToChar(Input == "" ? "0" : Input);
                 switch (ch)
                 {
-
+                    case '1':
+                        Console.WriteLine("\nEnter a number :");
+                        int num = Convert.ToInt32(Console.ReadLine());
+                        s.push(num);
+                        break;                   
                 }
             }
         }
