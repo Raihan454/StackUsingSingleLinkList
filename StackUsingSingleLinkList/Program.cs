@@ -41,6 +41,12 @@ namespace StackUsingSingleLinkList
             top = fresh;
             Console.WriteLine("\n" + element + "pushed");
         }
+
+        public void pop()
+        {
+            Console.WriteLine("\n the poped elements is: " + top.info);
+            top = top.next; // make top point to the next node is squence
+        }
     }
     internal class Program
     {
