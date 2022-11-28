@@ -48,9 +48,22 @@ namespace StackUsingSingleLinkList
             top = top.next; // make top point to the next node is squence
         }
 
+        public void display()
+        {
+            node tmp;
+            if (empty())
+                Console.WriteLine("\nStack Empty");
+            else
+            {
+                for (tmp = top; tmp != null; tmp = tmp.next)
+                {
+                    Console.WriteLine(tmp.info);
+                }
+            }
+        }
+
         static void Main(string[] args)
         {
-
         }
     }
 }
